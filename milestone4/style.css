@@ -1,0 +1,81 @@
+    @media only screen and (max-width: 992px) {
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: #8AE6C2;
+                font-family: 'Abril Fatface';
+                background-attachment: fixed;
+                margin: 0px;
+                min-height: 100%;
+                min-width: 100%;
+            }
+            header {
+                background-color: #CC5F5F;
+                color: black;
+                text-align: center;
+                font-size: x-large;
+                font-family: Georgia;
+                grid-column: 2 / 8;
+                grid-row: 1 / 2;
+            }
+            nav ul {
+                background-color: #CC5F5F;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: row nowrap;
+                font-family: 'Abril Fatface';
+                font-size: 20px;
+            }
+            nav ul li {
+                width: 100%;
+                display: flex;
+            }
+            a {
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            main {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                color: #666666;
+                font-family: verdana;
+                grid-column: 2 / 8;
+                grid-row: 3 / 4;
+            }
+            .column {
+                background-color: #e6f5f5;
+                float: left;
+                width: 49.9%;
+            }
+            .column2 {
+                background-color: #e6f5f5;
+                float: right;
+                width: 49.9%;
+            }
+            .column3 {
+                background-color: #e6f5f5;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            footer {
+                font-size: small;
+                font-style: italic;
+                text-align: center;
+                padding: 1em;
+                color: black;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            #wrapper {
+                display: grid;
+                grid-auto-rows: minmax(0px, auto);
+                grid-template-columns: minmax(0, 1fr) repeat(6, minmax(0, 150px)) minmax(0, 1fr);
+            }
+        }
+    }
