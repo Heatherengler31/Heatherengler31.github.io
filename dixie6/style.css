@@ -21,9 +21,14 @@ header h1 {
     background-image: url("./dsu.jpg");
     background-position: right;
     background-repeat: no-repeat;
-    padding-left: 1em;
+    padding-left: .5em;
     height: 72px;
     margin-bottom: 0;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 nav {
@@ -42,6 +47,19 @@ nav a {
 
 nav a:hover {
     background-color: #BA1C21;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+main {
+    background-color: #ffffff;
+    margin-left: 170px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 h2 {
@@ -64,6 +82,8 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 1em;
+    background-color: #FFFFFF;
+    margin-left: 170px;
 }
 
 #wrapper {
@@ -85,6 +105,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 170px;
 }
 
 #studenthero {
@@ -93,6 +114,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 170px;
 }
 
 #facultyhero {
@@ -101,8 +123,19 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 170px;
+}
+
+.clear {
+    clear: both applied;
 }
 
 nav a {
     text-decoration: none;
+}
+
+section {
+    float: left;
+    width: 33%;
+    padding-right: 1rem;
 }
