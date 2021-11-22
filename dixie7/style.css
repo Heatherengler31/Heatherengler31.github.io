@@ -1,0 +1,220 @@
+body {
+    background: linear-gradient(to bottom, #eeeeee, #ffffff);
+    ;
+    color: #666666;
+    font-family: Verdana, Arial;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin-block: 0px;
+}
+
+header {
+    background-color: #BA1C21;
+    color: #FFFFFF;
+    font-family: Georgia;
+    padding-right: 2em;
+    padding-left: 2em;
+    display: block;
+    row-gap: 1, 2;
+    column-gap: 2, -2;
+}
+
+header h1 {
+    line-height: 240%;
+    background-image: url("./dsu.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: .5em;
+    height: 72px;
+    margin: 0;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #424242;
+    font-weight: bold;
+    row-gap: 2, 3;
+    column-gap: 2, -2;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #BA1C21;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+main {
+    background-color: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    row-gap: 4, 5;
+    column-gap: 2, -2;
+}
+
+h2 {
+    color: #424242;
+    font-family: Georgia;
+}
+
+dt {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+.dsu {
+    color: #BA1C21;
+    font-size: 1.5cm;
+}
+
+footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    background-color: #FFFFFF;
+    row-gap: 5, 6;
+    column-gap: 2, -2;
+}
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: 0px, auto;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+h3 {
+    color: #BA1C21;
+}
+
+#redbar {
+    background-color: #BA1C21;
+    row-gap: 1, 2;
+    column-gap: 1, -1;
+}
+
+#greybar {
+    background-color: #424242;
+    row-gap: 2, 3;
+    column-gap: 1, -1;
+}
+
+#homehero {
+    background-image: url("./homehero.jpg");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    row-gap: 3, 4;
+    column-gap: 1, -1;
+}
+
+#studenthero {
+    background-image: url("./studenthero.jpg");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    row-gap: 3, 4;
+    column-gap: 1, -1;
+}
+
+#facultyhero {
+    background-image: url("./facultyhero.jpg");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    row-gap: 3, 4;
+    column-gap: 1, -1;
+}
+
+.clear {
+    clear: both applied;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+section {
+    float: left;
+    width: 33%;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    #wrapper {
+        grid-template-columns: 0px, 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        row-gap: 2, 3;
+        column-gap: 1, 5;
+    }
+    nav ul {
+        flex-flow: column nowrap;
+    }
+    #homehero {
+        row-gap: 2, 3;
+        column-gap: 5, 8;
+        height: auto;
+    }
+    #studenthero {
+        row-gap: 2, 3;
+        column-gap: 5, 8;
+        height: auto;
+    }
+    #facultyhero {
+        row-gap: 2, 3;
+        column-gap: 5, 8;
+        height: auto;
+    }
+    section {
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        background-image: none;
+        text-align: center;
+    }
+    nav {
+        row-gap: 2, 3;
+        column-gap: 1, -1;
+    }
+    #homehero {
+        display: none;
+    }
+    #studenthero {
+        display: none;
+    }
+    #facultyhero {
+        display: none;
+    }
+}
