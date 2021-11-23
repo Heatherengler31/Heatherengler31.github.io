@@ -32,7 +32,8 @@ header a {
 }
 
 nav {
-    float: left 160px;
+    float: left;
+    width: 160px;
     font-weight: bold;
     padding-top: 20px;
     padding-right: 5px;
@@ -92,7 +93,7 @@ footer {
     margin-left: auto;
     background-color: #424242;
     min-width: 960px;
-    max-width: 2048px drop-shadow 0 3x 3x 0 rgba(66, 66, 0.3);
+    max-width: 2048px;
 }
 
 h3 {
@@ -127,7 +128,7 @@ h3 {
 }
 
 .clear {
-    clear: both applied;
+    clear: both;
 }
 
 nav a {
