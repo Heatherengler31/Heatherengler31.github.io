@@ -15,8 +15,7 @@ header {
     padding-right: 2em;
     padding-left: 2em;
     display: block;
-    row-gap: 1, 2;
-    column-gap: 2, -2;
+    grid-area: 1/2/span 2 / span -2;
 }
 
 header h1 {
@@ -37,8 +36,7 @@ header a {
 nav {
     background-color: #424242;
     font-weight: bold;
-    row-gap: 2, 3;
-    column-gap: 2, -2;
+    grid-area: 2/2/span 3/ span -2;
 }
 
 nav a {
@@ -68,8 +66,7 @@ main {
     background-color: #ffffff;
     padding-top: 1px;
     padding-bottom: 1px;
-    row-gap: 4, 5;
-    column-gap: 2, -2;
+    grid-area: 4/2/span 5/ span -2;
 }
 
 h2 {
@@ -93,8 +90,7 @@ footer {
     text-align: center;
     padding: 1em;
     background-color: #FFFFFF;
-    row-gap: 5, 6;
-    column-gap: 2, -2;
+    grid-area: 5/2/span 6/span -2;
 }
 
 #wrapper {
@@ -109,14 +105,12 @@ h3 {
 
 #redbar {
     background-color: #BA1C21;
-    row-gap: 1, 2;
-    column-gap: 1, -1;
+    grid-area: 1/1/span 2/ span -1;
 }
 
 #greybar {
     background-color: #424242;
-    row-gap: 2, 3;
-    column-gap: 1, -1;
+    grid-area: 2/1/span 3/ span -1;
 }
 
 #homehero {
@@ -125,8 +119,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    row-gap: 3, 4;
-    column-gap: 1, -1;
+    grid-area: 3/1/span 4/ span -1;
 }
 
 #studenthero {
@@ -135,8 +128,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    row-gap: 3, 4;
-    column-gap: 1, -1;
+    grid-area: 3/1/span 4/ span -1;
 }
 
 #facultyhero {
@@ -145,12 +137,11 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    row-gap: 3, 4;
-    column-gap: 1, -1;
+    grid-area: 3/1/span 4/ span -1;
 }
 
 .clear {
-    clear: both applied;
+    clear: both;
 }
 
 nav a {
@@ -171,26 +162,22 @@ section {
 
 @media screen and (max-width: 900px) {
     nav {
-        row-gap: 2, 3;
-        column-gap: 1, 5;
+        grid-area: 2/1/span 3/ span 5;
     }
     nav ul {
         flex-flow: column nowrap;
     }
     #homehero {
-        row-gap: 2, 3;
-        column-gap: 5, 8;
         height: auto;
+        grid-area: 2/5/span 3/ span 8;
     }
     #studenthero {
-        row-gap: 2, 3;
-        column-gap: 5, 8;
         height: auto;
+        grid-area: 2/5/span 3/ span 8;
     }
     #facultyhero {
-        row-gap: 2, 3;
-        column-gap: 5, 8;
         height: auto;
+        grid-area: 2/5/span 3/ span 8;
     }
     section {
         float: none;
@@ -205,8 +192,7 @@ section {
         text-align: center;
     }
     nav {
-        row-gap: 2, 3;
-        column-gap: 1, -1;
+        grid-area: 2/1/span 3/ span -1;
     }
     #homehero {
         display: none;
